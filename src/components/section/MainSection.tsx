@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function MainSection() {
   return (
-    <div className="w-full flex flex-row items-center justify-center gap-10 border-b-2 border-black">
+    <div className="w-full min-h-screen flex flex-row items-center justify-center gap-10 border-b-2 border-black">
       <div className="w-1/3">
         <motion.div
           initial={{ scale: 0.5, opacity: 0 }}

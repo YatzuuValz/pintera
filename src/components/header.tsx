@@ -27,27 +27,31 @@ function header() {
         transition={{ delay: 0.8, duration: 0.5 }}
         className="hidden md:flex items-center space-x-12 text-primary-light text-md font-medium ml-10"
       >
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          href=""
-          className="hover:text-gray-300 transition"
-        >
-          Tentang
-        </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          href=""
-          className="font-bold border-b-2 border-white pb-1"
-        >
-          Pengajar
-        </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          href=""
-          className="hover:text-gray-300 transition"
-        >
-          Harga
-        </motion.a>
+        <Link href={"/"}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="hover:text-gray-300 transition"
+          >
+            Tentang
+          </motion.div>
+        </Link>
+        <Link href={"/"}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="font-bold border-b-2 border-white pb-1"
+          >
+            Pengajar
+          </motion.div>
+        </Link>
+
+        <Link href={"/"}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className="hover:text-gray-300 transition"
+          >
+            Harga
+          </motion.div>
+        </Link>
       </motion.div>
 
       {/* Tombol Daftar */}
