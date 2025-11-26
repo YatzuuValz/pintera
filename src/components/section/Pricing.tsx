@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <div className="w-[820px] h-[520px] mx-auto relative font-sans bg-gradient-to-b from-[#fbf6ea] to-[#dfe8f5] border-t-[1px] border-[#cfc6b4] overflow-hidden">
+    <div className="border-b-2 border-black mx-auto font-sans py-20">
       {/* Header */}
       <header className="text-center pt-10">
         <h1 className="text-[48px] font-extrabold tracking-tight text-[#0b0b0b]">Pilih paket belajar mu</h1>
@@ -8,9 +8,9 @@ export default function Pricing() {
       </header>
 
       {/* Cards container */}
-      <div className="absolute left-1/2 top-[140px] -translate-x-1/2 w-[760px] flex justify-between items-start">
+      <div className=" flex justify-center items-center gap-10">
         {Array.from({ length: 3 }).map((_, i) => (
-          <article key={i} className="w-[220px] h-[340px] rounded-[22px] shadow-[0_25px_40px_rgba(20,40,80,0.12)] bg-gradient-to-b from-[#142a57] via-[#2f4b84] to-[#b5c6dd] p-6 relative flex flex-col justify-between">
+          <article key={i} className="w-1/4 aspect-5/7 rounded-4xl shadow-[0_25px_40px_rgba(20,40,80,0.12)] bg-radial-[at_50%_0%] from-primary from-10% via-[#2f4b84] via-60% to-tertiary to-200% p-6 relative flex flex-col justify-between">
             <div>
               <div className="text-right text-white">
                 <div className="text-[22px] font-extrabold leading-none">Rp <span className="text-[28px]">300<span className="text-[12px] align-super">.000</span></span></div>

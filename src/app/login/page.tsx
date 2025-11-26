@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Login() {
   return (
-    <div className="min-h-screen bg-primary-light font-sans w-screen  h-screen pt-20 flex flex-col md:flex-row justify-between ">
+    <div className="bg-primary-light font-sans  h-screen pt-20 flex flex-col md:flex-row justify-between ">
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center relative z-10 mb-10 md:mb-0">
         <div>
           <Image src="/ref/Group18.png" fill alt=""></Image>
