@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Pintera Login",
@@ -26,6 +27,7 @@ export default function RootLayout({
           height={1000}
         ></Image> */}
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
